@@ -1,0 +1,40 @@
+server:
+  port:  8081
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  
+  mail:
+    host: smtp.gmail.com
+    username: debashisn564@gmail.com
+    password: mfstdmjpncvddfpm
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
+        security: DEBUG
+
+app:
+  jwt:
+    secret: cWJodmhuYjdzZ2ZsMW1oYW0yNnF1emsxajA0YzJnbWpnaWRrZXJjN2JvMnNiNmV2dDRyM3U4bnBvbHF0Y2VueGkweGFpdzZxeXRnbjA3a2NxMjJtMW9ia3NycTd5dml4d3AwY3IwNTMwcnV3NWx1NXp5NGljcXlxd29idnQxMDk=
+
+  
